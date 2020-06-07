@@ -30,7 +30,7 @@ void main(){
 
     if(memcmp(buf, "HTTP/1.1 200",12) == 0){
         printf("200 OK ! \n\n");
-    }
+    }else printf("can't connect to %s",SERVER_TO_REQUEST);
     free(buf);
     free(path);
     pclose(fh);
