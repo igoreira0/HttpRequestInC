@@ -1,3 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define CMD_VERIFY_USB "lsblk | grep sd"
+#define PATH_TO_SAVE " > /tmp/usb.txt"
+
 int main(int argc, char** argv) {
 
     FILE* fh;
